@@ -59,7 +59,7 @@ integrations:
     
 
   hub:
-    - integrationName: "shippable-docker"
+    - integrationName: "vidya-docker"
       type: docker
       branches:
         only:
