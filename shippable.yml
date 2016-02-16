@@ -8,8 +8,8 @@ node_js:
 env:
   - XUNIT_FILE=shippable/testresults/result.xml
 
-services:
-  - mysql
+#services:
+ # - mysql
 # Make folders for the reports, and create the SQL db
 before_script:
   - mkdir -p shippable/testresults
@@ -26,5 +26,5 @@ after_script:
   - ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha test.js -- -u tdd
   - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
 
-notifications:
-  email: false
+#notifications:
+ # email: false
