@@ -18,7 +18,8 @@ before_script:
 
 script:
   - npm test
-  - echo $Branch
+  - echo $BRANCH
+  - echo $BUILD_NUMBER
 
 # Generate coverage report with istanbul
 after_script:
