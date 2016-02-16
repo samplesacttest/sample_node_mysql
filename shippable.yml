@@ -8,8 +8,8 @@ node_js:
 env:
   - XUNIT_FILE=shippable/testresults/result.xml
 
-#services:
- # - mysql
+services:
+  - mysql
 # Make folders for the reports, and create the SQL db
 before_script:
   - mkdir -p shippable/testresults
