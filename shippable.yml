@@ -16,6 +16,7 @@ before_script:
 
 script:
   - npm test
+  - echo $Branch
 
 # Generate coverage report with istanbul
 after_script:
