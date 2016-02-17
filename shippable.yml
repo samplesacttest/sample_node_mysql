@@ -26,5 +26,9 @@ after_script:
   - ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha test.js -- -u tdd
   - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
 
-#notifications:
- # email: false
+notifications:  
+  irc: 
+    pull_requests: true
+    channels:
+      - "chat.freenode.net#test-irc"
+      - "chat.freenode.net#test-cock" 
